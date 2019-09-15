@@ -1,13 +1,149 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<title>ARGOAGRO</title>
-</head>
-<body>
-<p class="blue-color">Hello, this is a website for ARGOAGRO data analytics. (CLICK ME!)</p>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>ARGOAGRO</title>
+  </head>
+  <body>
+    <div class="container-fluid no-mar-pad">
+      <div class="row no-mar-pad">
+        <div class="col-md-4 no-mar-pad">
+          <section style="margin-right: 20px;">
+            <h2 class="title">JUMLAH PENGGUNA</h2>
+            <div
+              style="display: flex; flex-direction: row; justify-content: space-around"
+            >
+              <div
+                style="text-align: center; display: flex; flex-direction: column; justify-content: center;"
+              >
+                <p style="margin-bottom: 0;">1536</p>
+                <p style="color: white; font-size: 0.75rem;">AKUN PEMBELI</p>
+              </div>
+              <div style="text-align: center;">
+                <p style="margin-bottom: 4px;">PEMBELI BARU:</p>
+                <p>
+                  124
+                  <span style="color: white; font-size: 0.75rem;"
+                    >BULAN INI</span
+                  >
+                </p>
+                <p>
+                  26
+                  <span style="color: white; font-size: 0.75rem;"
+                    >MINGGU INI</span
+                  >
+                </p>
+                <p>
+                  6
+                  <span style="color: white; font-size: 0.75rem;"
+                    >HARI INI</span
+                  >
+                </p>
+              </div>
+            </div>
+            <hr style="background: white;" />
+            <div
+              style="display: flex; flex-direction: row; justify-content: space-around"
+            >
+              <div
+                style="text-align: center; display: flex; flex-direction: column; justify-content: center;"
+              >
+                <p>298</p>
+                <p style="color: white; font-size: 0.75rem;">AKUN PENJUAL</p>
+              </div>
+              <div style="text-align: center;">
+                <p style="margin-bottom: 4px;">PENJUAL BARU:</p>
+                <p>
+                  22
+                  <span style="color: white; font-size: 0.75rem;"
+                    >BULAN INI</span
+                  >
+                </p>
+                <p>
+                  8
+                  <span style="color: white; font-size: 0.75rem;"
+                    >MINGGU INI</span
+                  >
+                </p>
+                <p>
+                  3
+                  <span style="color: white; font-size: 0.75rem;"
+                    >HARI INI</span
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-4 no-mar-pad">
+          <section id="produk-terjual">
+            <h2 class="title">PRODUK TERJUAL</h2>
+            <div
+              style="display: flex; flex-direction: row; justify-content:space-around; align-items: center;"
+            >
+              <div>
+                <select>
+                  <option>SEPANJANG MASA</option>
+                  <option>BULAN INI</option>
+                  <option>MINGGU INI</option>
+                  <option>HARI INI</option>
+                </select>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <div
+                  style="display: flex; flex-direction: row; align-items: center; margin-bottom: 8px;"
+                >
+                  <div
+                    class="color-box"
+                    style="background-color: #5abfbf;"
+                  ></div>
+                  <div>
+                    <p>TAANAMAN</p>
+                    <p>PANGAN</p>
+                  </div>
+                </div>
 
-<script src="https://d3js.org/d3.v4.js"></script>
-<script type="text/javascript" src="scripts.js"></script>
-</body>
+                <div
+                  style="display: flex; flex-direction: row; align-items: center;  margin-bottom: 8px;"
+                >
+                  <div
+                    class="color-box"
+                    style="background-color: orange;"
+                  ></div>
+                  <div>
+                    <p>TAANAMAN</p>
+                    <P>HORTIKULTURA</P>
+                  </div>
+                </div>
+
+                <div style="display: flex; flex-direction: row">
+                  <div
+                    style="display: flex; flex-direction: row; align-items: center;"
+                  >
+                    <div
+                      class="color-box"
+                      style="background-color: pink;"
+                    ></div>
+                    <p>PERKEBUNAN</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-4 no-mar-pad">
+          <section>fdsfds</section>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
 </html>
