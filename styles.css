@@ -18,3 +18,7 @@ section {
 .white-color {
 	color: #FFFFFF;
 }
+
+p {
+	cursor: pointer;
+}
