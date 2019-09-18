@@ -87,45 +87,47 @@
             <div
               style="display: flex; flex-direction: row; justify-content:space-around; align-items: center;"
             >
-              <div>
-                <select>
-                  <option>SEPANJANG MASA</option>
-                  <option>BULAN INI</option>
-                  <option>MINGGU INI</option>
-                  <option>HARI INI</option>
+              <div
+                style="display: flex; flex-direction: column; align-items: center;"
+              >
+                <select id="produk-terjual-select">
+                  <option value="0">SEPANJANG MASA</option>
+                  <option value="1">BULAN INI</option>
+                  <option value="2">MINGGU INI</option>
+                  <option value="3">HARI INI</option>
                 </select>
+                <div>
+                  <svg id="produk-terjual-chart"></svg>
+                </div>
               </div>
               <div style="display: flex; flex-direction: column;">
-                <div
-                  style="display: flex; flex-direction: row; align-items: center; margin-bottom: 8px;"
-                >
+                <div class="legend">
                   <div
                     class="color-box"
                     style="background-color: #5abfbf;"
                   ></div>
                   <div>
-                    <p>TAANAMAN</p>
+                    <p>TANAMAN</p>
                     <p>PANGAN</p>
                   </div>
                 </div>
-
-                <div
-                  style="display: flex; flex-direction: row; align-items: center;  margin-bottom: 8px;"
-                >
+                <p>JUMLAH : <span id="total-1">3,232</span></p>
+                <hr style="background: white" />
+                <div class="legend">
                   <div
                     class="color-box"
                     style="background-color: orange;"
                   ></div>
                   <div>
-                    <p>TAANAMAN</p>
+                    <p>TANAMAN</p>
                     <P>HORTIKULTURA</P>
                   </div>
                 </div>
+                <p>JUMLAH : <span id="total-2">321,321</span></p>
+                <hr style="background: white" />
 
                 <div style="display: flex; flex-direction: row">
-                  <div
-                    style="display: flex; flex-direction: row; align-items: center;"
-                  >
+                  <div class="legend">
                     <div
                       class="color-box"
                       style="background-color: pink;"
@@ -133,6 +135,8 @@
                     <p>PERKEBUNAN</p>
                   </div>
                 </div>
+                <p>JUMLAH : <span id="total-3">1,000</span></p>
+                <hr style="background: white" />
               </div>
             </div>
           </section>
@@ -145,5 +149,6 @@
 
     <script src="https://d3js.org/d3.v4.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="produk-terjual.js"></script>
   </body>
 </html>

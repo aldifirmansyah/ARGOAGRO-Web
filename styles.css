@@ -55,3 +55,19 @@ p {
   font-weight: 400;
   font-size: 0.8rem;
 }
+
+#produk-terjual .legend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 12px;
+}
+
+#produk-terjual hr {
+  margin: 4px;
+}
+
+#produk-terjual span {
+  color: #5abfbf;
+  font-size: 1rem;
+}
