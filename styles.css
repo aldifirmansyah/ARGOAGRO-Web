@@ -49,8 +49,8 @@ p {
   color: white;
 }
 
-#produk-terjual select,
-#produk-terjual option {
+select,
+option {
   color: black;
   font-weight: 400;
   font-size: 0.8rem;
@@ -70,4 +70,27 @@ p {
 #produk-terjual span {
   color: #5abfbf;
   font-size: 1rem;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #5abfbf;
+  color: white;
+}
+
+#best-stores .table {
+  margin-top: 8px;
 }
