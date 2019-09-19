@@ -66,7 +66,6 @@ function setData(idx) {
     .transition()
     .duration(1000)
     .attr("fill", d => colorScale(d.data.key))
-    .attr("stroke", "black")
     .attr("d", path);
 
   let updateText = d3
