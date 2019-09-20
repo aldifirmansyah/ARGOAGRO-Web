@@ -83,7 +83,7 @@ function setData(idx) {
     .attr("transform", function(d) {
       return "translate(" + path.centroid(d) + ")";
     })
-    .attr("fill", "#C8C8C8")
+    .attr("fill", "white")
     .style("text-anchor", "middle")
     .style("font-size", 17);
 

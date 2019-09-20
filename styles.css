@@ -98,3 +98,20 @@ option {
 #best-stores .table {
   margin-top: 8px;
 }
+
+.bar-chart-legends {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.bar-chart-legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
+
+.bar-chart-legends p {
+  margin-right: 4px;
+}
