@@ -20,7 +20,7 @@ var paired = data[1].reduce((acc, next, idx) => {
 var colorScale = d3
   .scaleOrdinal()
   .domain(paired)
-  .range(["#5abfbf", "orange", "pink"]);
+  .range(["#FE0000", "#FFA300", "#00A9E0"]);
 
 d3.select("#produk-terjual-chart")
   .attr("width", width)
@@ -83,6 +83,7 @@ function setData(idx) {
     .attr("transform", function(d) {
       return "translate(" + path.centroid(d) + ")";
     })
+    .attr("fill", "#C8C8C8")
     .style("text-anchor", "middle")
     .style("font-size", 17);
 

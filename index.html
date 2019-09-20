@@ -14,8 +14,8 @@
     <div class="container-fluid no-mar-pad">
       <div class="row no-mar-pad">
         <div class="col-md-4 no-mar-pad">
-          <section style="margin-right: 20px;">
-            <h2 class="title">JUMLAH PENGGUNA</h2>
+          <section id="jumlah-pengguna" style="margin-right: 20px;">
+            <h2 class="title">Jumlah Pengguna</h2>
             <div
               style="display: flex; flex-direction: row; justify-content: space-around"
             >
@@ -23,31 +23,31 @@
                 style="text-align: center; display: flex; flex-direction: column; justify-content: center;"
               >
                 <p style="margin-bottom: 0;">1536</p>
-                <p style="color: white; font-size: 0.75rem;">AKUN PEMBELI</p>
+                <p style="color: #9C9C9C; font-size: 0.75rem;">Akun Pembeli</p>
               </div>
               <div style="text-align: center;">
-                <p style="margin-bottom: 4px;">PEMBELI BARU:</p>
+                <p style="margin-bottom: 4px;">Pembeli Baru:</p>
                 <p>
                   124
-                  <span style="color: white; font-size: 0.75rem;"
-                    >BULAN INI</span
+                  <span style="color: #9C9C9C; font-size: 0.75rem;"
+                    >Bulan Ini</span
                   >
                 </p>
                 <p>
                   26
-                  <span style="color: white; font-size: 0.75rem;"
-                    >MINGGU INI</span
+                  <span style="color: #9C9C9C; font-size: 0.75rem;"
+                    >Minggu Ini</span
                   >
                 </p>
                 <p>
                   6
-                  <span style="color: white; font-size: 0.75rem;"
-                    >HARI INI</span
+                  <span style="color: #9C9C9C; font-size: 0.75rem;"
+                    >Hari Ini</span
                   >
                 </p>
               </div>
             </div>
-            <hr style="background: white;" />
+            <hr style="background: #9C9C9C;" />
             <div
               style="display: flex; flex-direction: row; justify-content: space-around"
             >
@@ -55,26 +55,26 @@
                 style="text-align: center; display: flex; flex-direction: column; justify-content: center;"
               >
                 <p>298</p>
-                <p style="color: white; font-size: 0.75rem;">AKUN PENJUAL</p>
+                <p style="color: #9C9C9C; font-size: 0.75rem;">Akun Penjual</p>
               </div>
               <div style="text-align: center;">
-                <p style="margin-bottom: 4px;">PENJUAL BARU:</p>
+                <p style="margin-bottom: 4px;">Penjual Baru:</p>
                 <p>
                   22
-                  <span style="color: white; font-size: 0.75rem;"
-                    >BULAN INI</span
+                  <span style="color: #9C9C9C; font-size: 0.75rem;"
+                    >Bulan Ini</span
                   >
                 </p>
                 <p>
                   8
-                  <span style="color: white; font-size: 0.75rem;"
-                    >MINGGU INI</span
+                  <span style="color: #9C9C9C; font-size: 0.75rem;"
+                    >Minggu Ini</span
                   >
                 </p>
                 <p>
                   3
-                  <span style="color: white; font-size: 0.75rem;"
-                    >HARI INI</span
+                  <span style="color: #9C9C9C; font-size: 0.75rem;"
+                    >Hari Ini</span
                   >
                 </p>
               </div>
@@ -83,7 +83,7 @@
         </div>
         <div class="col-md-4 no-mar-pad">
           <section id="produk-terjual">
-            <h2 class="title">PRODUK TERJUAL</h2>
+            <h2 class="title">Produk Terjual</h2>
             <div
               style="display: flex; flex-direction: row; justify-content:space-around; align-items: center;"
             >
@@ -91,10 +91,10 @@
                 style="display: flex; flex-direction: column; align-items: center;"
               >
                 <select id="produk-terjual-select">
-                  <option value="0">SEPANJANG MASA</option>
-                  <option value="1">BULAN INI</option>
-                  <option value="2">MINGGU INI</option>
-                  <option value="3">HARI INI</option>
+                  <option value="0">Sepanjang Masa</option>
+                  <option value="1">Bulan Ini</option>
+                  <option value="2">Minggu Ini</option>
+                  <option value="3">Hari Ini</option>
                 </select>
                 <div>
                   <svg id="produk-terjual-chart"></svg>
@@ -104,27 +104,27 @@
                 <div class="legend">
                   <div
                     class="color-box"
-                    style="background-color: #5abfbf;"
+                    style="background-color: #FE0000;"
                   ></div>
                   <div>
-                    <p>TANAMAN</p>
-                    <p>PANGAN</p>
+                    <p>Tanaman</p>
+                    <p>Pangan</p>
                   </div>
                 </div>
-                <p>JUMLAH : <span id="total-1">3,232</span></p>
-                <hr style="background: white" />
+                <p>Jumlah : <span id="total-1"></span></p>
+                <hr style="background: #9C9C9C" />
                 <div class="legend">
                   <div
                     class="color-box"
-                    style="background-color: orange;"
+                    style="background-color: #FFA300;"
                   ></div>
                   <div>
-                    <p>TANAMAN</p>
-                    <P>HORTIKULTURA</P>
+                    <p>Tanaman</p>
+                    <P>Hortikultura</P>
                   </div>
                 </div>
-                <p>JUMLAH : <span id="total-2">321,321</span></p>
-                <hr style="background: white" />
+                <p>Jumlah : <span id="total-2"></span></p>
+                <hr style="background: #9C9C9C" />
 
                 <div style="display: flex; flex-direction: row">
                   <div class="legend">
@@ -132,42 +132,30 @@
                       class="color-box"
                       style="background-color: pink;"
                     ></div>
-                    <p>PERKEBUNAN</p>
+                    <p>Perkebunan</p>
                   </div>
                 </div>
-                <p>JUMLAH : <span id="total-3">1,000</span></p>
-                <hr style="background: white" />
+                <p>Jumlah : <span id="total-3"></span></p>
+                <hr style="background: #9C9C9C" />
               </div>
             </div>
           </section>
         </div>
         <div class="col-md-4 no-mar-pad">
           <section id="best-stores">
-            <h2 class="title">TOKO TERBAIK</h2>
-            <select id="produk-terjual-select">
-              <option value="0">TANAMAN PANGAN</option>
-              <option value="1">TANAMAN HORTIKULTURA</option>
-              <option value="2">PERKEBUNAN</option>
+            <h2 class="title">Toko Terbaik</h2>
+            <select id="toko-terbaik-select">
+              <option value="0">Tanaman Pangan</option>
+              <option value="1">Tanaman Hortikultura</option>
+              <option value="2">Perkebunan</option>
             </select>
-            <p style="color: white; font-size: 0.7rem; margin: 6px 0;">
-              *PENJUALAN TERBANYAK DALAM 3 BULAN TERAKHIR
+            <p style="color: #9C9C9C; font-size: 0.7rem; margin: 6px 0;">
+              *Penjualan terbanyak dalam 3 bulan terakhir
             </p>
             <table class="table">
               <tr>
-                <th>NAMA TOKO</th>
-                <th>PRODUK TERJUAL</th>
-              </tr>
-              <tr>
-                <td>Toko A</td>
-                <td>100,000</td>
-              </tr>
-              <tr>
-                <td>Toko B</td>
-                <td>14,000</td>
-              </tr>
-              <tr>
-                <td>Toko C</td>
-                <td>1,000</td>
+                <th>Nama Toko</th>
+                <th>Produk Terjual<span id="product-unit"></span></th>
               </tr>
             </table>
           </section>
@@ -176,13 +164,13 @@
       <div class="row no-mar-pad" style="margin-top: 20px;">
         <div class="col-md-6 no-mar-pad">
           <section style="margin-right: 20px;">
-            <h2 class="titie">ASAL PEMBELI</h2>
+            <h2 class="title">Asal Pembeli</h2>
           </section>
         </div>
         <div class="col-md-6 no-mar-pad">
           <section>
-            <h2 class="title">KOMODITAS TANAMAN HORTIKULTURA YANG TERJUAL</h2>
-            <h2 class="title" style="font-size: 1rem;">PER JUMLAH KONSUMEN</h2>
+            <h2 class="title">Komoditas Tanaman Horikultura yang Terjual</h2>
+            <h2 class="title" style="font-size: 1rem;">Per Jumlah Konsumen</h2>
           </section>
         </div>
       </div>
@@ -191,5 +179,6 @@
     <script src="https://d3js.org/d3.v4.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
     <script type="text/javascript" src="produk-terjual.js"></script>
+    <script type="text/javascript" src="toko-terbaik.js"></script>
   </body>
 </html>

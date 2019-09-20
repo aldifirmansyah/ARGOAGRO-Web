@@ -3,19 +3,19 @@ html {
 }
 
 * {
-  color: #5abfbf;
+  color: #9c9c9c;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #2b2a2a;
+  background-color: #f4f2f3;
   padding: 20px;
 }
 
 section {
-  background-color: #424242;
+  background-color: white;
   padding: 10px;
   height: 100%;
 }
@@ -32,7 +32,11 @@ p {
 
 .title {
   font-size: 1.33rem;
-  color: white;
+  color: black;
+}
+
+#jumlah-pengguna p {
+  color: #5abfbf;
 }
 
 #produk-terjual {
@@ -46,12 +50,12 @@ p {
 }
 #produk-terjual p {
   font-size: 0.7rem;
-  color: white;
+  color: #9c9c9c;
 }
 
 select,
 option {
-  color: black;
+  color: #9c9c9c;
   font-weight: 400;
   font-size: 0.8rem;
 }
@@ -87,8 +91,8 @@ option {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #5abfbf;
-  color: white;
+  background-color: #f4f2f3;
+  color: #9c9c9c;
 }
 
 #best-stores .table {
