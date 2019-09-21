@@ -62,10 +62,11 @@ setTable(d3.select("#toko-terbaik-select").property("value"));
 function setTable(idx) {
   let tempData = bestStoresData[idx];
   d3.select("#best-stores #product-unit").text(` (${tempData.unitName})`);
-  d3.selectAll("#best-stores .data").remove();
   let table = d3.select("#best-stores .table");
 
-  let updateTable = table.selectAll(".data").data(tempData.data);
+  let updateTable = table
+    .selectAll(".data")
+    .data(tempData.data, d => d.name + d.productSold);
   updateTable.exit().remove();
 
   let tr = updateTable

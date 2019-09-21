@@ -169,38 +169,17 @@
         </div>
         <div class="col-md-6 no-mar-pad">
           <section>
-            <h2 class="title">Komoditas Tanaman Horikultura yang Terjual</h2>
+            <h2 class="title">Komoditas yang Terjual</h2>
             <h2 class="title" style="font-size: 1rem;">Per Jumlah Konsumen</h2>
+            <select id="komoditas-terjual-select">
+              <option value="0">Tanaman Pangan</option>
+              <option value="1">Tanaman Hortikultura</option>
+              <option value="2">Perkebunan</option>
+            </select>
             <div style="display: flex; justify-content: center;">
               <svg id="bar-chart-svg"></svg>
             </div>
-            <div class="bar-chart-legends">
-              <div
-                class="bar-chart-legend-color"
-                style="background: #FE0000"
-              ></div>
-              <p>Pepaya</p>
-              <div
-                class="bar-chart-legend-color"
-                style="background: #FFA300"
-              ></div>
-              <p>Pisang</p>
-              <div
-                class="bar-chart-legend-color"
-                style="background: #00A9E0"
-              ></div>
-              <p>Durian</p>
-              <div
-                class="bar-chart-legend-color"
-                style="background: #3FC1AB"
-              ></div>
-              <p>Kakao</p>
-              <div
-                class="bar-chart-legend-color"
-                style="background: purple"
-              ></div>
-              <p>Mangga</p>
-            </div>
+            <div class="bar-chart-legends"></div>
           </section>
         </div>
       </div>
@@ -210,6 +189,6 @@
     <script type="text/javascript" src="scripts.js"></script>
     <script type="text/javascript" src="produk-terjual.js"></script>
     <script type="text/javascript" src="toko-terbaik.js"></script>
-    <script type="text/javascript" src="komoditas-hortikultura.js"></script>
+    <script type="text/javascript" src="komoditas-terjual.js"></script>
   </body>
 </html>

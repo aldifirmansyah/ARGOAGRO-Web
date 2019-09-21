@@ -108,34 +108,16 @@ option {
   font-size: 0.75rem;
 }
 
+.bar-chart-legends .legend {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
 .bar-chart-legend-color {
   width: 20px;
   height: 20px;
   margin-right: 2px;
-}
-
-.bar-chart-legends p {
-  margin-right: 4px;
-}
-
-.first-color-bar {
-  fill: #fe0000;
-}
-
-.second-color-bar {
-  fill: #ffa300;
-}
-
-.third-color-bar {
-  fill: #00a9e0;
-}
-
-.fourth-color-bar {
-  fill: #3fc1ab;
-}
-
-.fifth-color-bar {
-  fill: purple;
 }
 
 #bar-chart-svg text {
