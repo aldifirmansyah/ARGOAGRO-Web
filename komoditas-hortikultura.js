@@ -131,15 +131,3 @@ xAxis
   )
   .attr("y", heightBarChart - 8)
   .attr("text-anchor", "middle");
-
-// let barChart = svg.selectAll("rect").data(hortikulturaData);
-// barChart
-//   .enter()
-//   .append("rect")
-//   .attr("x", (d, i) => (barWidth + barPadding) * i + marginBarChart)
-//   .attr(
-//     "y",
-//     d => heightBarChart - marginBarChart - sum(d.data) * heightPerCount
-//   )
-//   .attr("height", d => sum(d.data) * heightPerCount)
-//   .attr("width", barWidth);
