@@ -79,6 +79,7 @@ option {
 .table {
   border-collapse: collapse;
   width: 100%;
+  font-size: 0.75rem;
 }
 
 .table td,
@@ -104,6 +105,7 @@ option {
   flex-direction: row;
   justify-content: center;
   justify-items: center;
+  font-size: 0.75rem;
 }
 
 .bar-chart-legend-color {
@@ -138,8 +140,9 @@ option {
 
 #bar-chart-svg text {
   fill: #9c9c9c;
+  font-size: 0.75rem;
 }
 
-#bar-chart-svg .x-axis {
+#bar-chart-svg .x-axis text {
   font-size: 0.7rem;
 }
