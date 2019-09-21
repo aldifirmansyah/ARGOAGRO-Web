@@ -115,3 +115,31 @@ option {
 .bar-chart-legends p {
   margin-right: 4px;
 }
+
+.first-color-bar {
+  fill: #fe0000;
+}
+
+.second-color-bar {
+  fill: #ffa300;
+}
+
+.third-color-bar {
+  fill: #00a9e0;
+}
+
+.fourth-color-bar {
+  fill: #3fc1ab;
+}
+
+.fifth-color-bar {
+  fill: purple;
+}
+
+#bar-chart-svg text {
+  fill: #9c9c9c;
+}
+
+#bar-chart-svg .x-axis {
+  font-size: 0.7rem;
+}
