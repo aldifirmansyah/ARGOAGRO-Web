@@ -55,7 +55,7 @@ p {
 
 select,
 option {
-  color: #9c9c9c;
+  color: black;
   font-weight: 400;
   font-size: 0.8rem;
 }
@@ -98,6 +98,11 @@ option {
 
 #best-stores .table {
   margin-top: 8px;
+}
+
+#map-svg text {
+  fill: #9c9c9c;
+  font-size: 0.75rem;
 }
 
 .bar-chart-legends {
