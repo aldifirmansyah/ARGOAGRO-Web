@@ -1,6 +1,11 @@
 const widthMap = 500;
 const heightMap = 280;
 
+let tooltip = d3
+  .select("body")
+  .append("div")
+  .classed("tooltip", true);
+
 d3.queue()
   .defer(d3.json, `${window.location.href}/../province-data.json`)
   .await(function(error, provinceData) {
@@ -12,8 +17,6 @@ d3.queue()
       let province = geoData.find(d => d.properties.provinsi == row.province);
       province.properties = row;
     });
-
-    console.log(geoData);
 
     const projection = d3
       .geoMercator()
@@ -39,7 +42,17 @@ d3.queue()
       .append("path")
       .classed("province", true)
       .attr("d", path)
-      .attr("fill", d => colorScale(d.properties.buyer));
+      .attr("fill", d => colorScale(d.properties.buyer))
+      .on("mousemove", d => {
+        tooltip
+          .style("opacity", 1)
+          .style("left", d3.event.x + "px")
+          .style("top", d3.event.y + "px").html(`<p>${d.properties.province}</p>
+                <p>${d.properties.buyer}</p>`);
+      })
+      .on("mouseout", () => {
+        tooltip.style("opacity", 0);
+      });
 
     const legendScale = d3
       .scaleLinear()
